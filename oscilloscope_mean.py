@@ -44,7 +44,9 @@ def calculate_mean(pulse_percentage, path):
                       (considered_samples/2))
     considered_data = data[lower_limit:upper_limit]
 
-    data_mean = considered_data.mean()
+    offset_data = data[data.size - 50:data.size]
+    offset_mean = offset_data.mean()
+    data_mean = considered_data.mean() - offset_mean
 
     return data_mean
 

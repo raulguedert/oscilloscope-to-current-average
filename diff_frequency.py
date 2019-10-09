@@ -4,7 +4,7 @@ from win32com.client import Dispatch
 import numpy as np
 
 # Root path of all measurements
-path = 'C:\\Users\\raulg\\OneDrive\\Doutorado\\Modelo Figado 1Hz 5kHz\\FIG\\'
+path = 'C:\\Users\\raulg\\OneDrive\\Doutorado\\Modelo Taxas de Repetição\\Músculo\\Pareado\\'
 
 # Define the percentage of pulse that will be considered to mean calculation
 pulse_percentage = 50
